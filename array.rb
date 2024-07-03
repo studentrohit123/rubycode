@@ -43,9 +43,9 @@ for i in arr do
       puts (i)
 end
 
-def multiple(a,b)
-      c = a*b
+# def multiple(a,b)
+#       c = a*b
 
-end
-x = multiple(2,3)
-puts(x)
+# end
+# x = multiple(2,3)
+# puts(x) // return values
