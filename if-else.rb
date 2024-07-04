@@ -54,3 +54,16 @@ x = 5
 #     end
     
 #     puts "Done!"
+
+num = 23
+case num
+when 22
+  puts "#{num} number is print"
+when 23
+  puts "#{num} number is print"
+else
+  puts "number is not prajent"
+end
+
+d
+end

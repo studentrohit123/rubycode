@@ -45,4 +45,18 @@ arr = [10,20,30,40]
 puts arr.min
 puts arr.max
 puts arr.sort
-puts arr.take
+puts arr.take(3)
+puts arr.first
+
+str = "12"
+a = str.to_i
+puts a
+
+s = "hello".concat"11"
+puts s
+
+st = "".empty?
+puts st
+
+arra = [1,2,3,4,5]
+puts arra.drop(3)

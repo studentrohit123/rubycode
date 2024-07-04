@@ -13,7 +13,7 @@ puts Gfg_Module::C
 
 Gfg_Module.sum
 Gfg_Module.mult
-=end
+
 
 module Student
 
@@ -23,8 +23,7 @@ module Student
   end
 end
 Student.mark(20)
-
-
+=end
 
 module Gfg
   def portal
@@ -62,6 +61,44 @@ class Geeksforgeeks
   obj.secondmodule
   obj.secondmo
   obj.add
+
+
+
+# prepend
+module A
+  def sum(x,y)
+
+    puts "module is colled"
+    puts x+y
+  end
+end
+class B
+  prepend A
+  def sum
+    puts "class is colled"
+  end
+end
+obj = B.new
+obj.sum(2,3)
+
+
+ 
+# extend
+module A
+  def sum()
+
+    puts "module is colled"
+    
+  end
+end
+class B
+  extend A
+  def sum
+    puts "class is colled"
+  end
+end
+obj = B.new
+obj.sum
 
 
 

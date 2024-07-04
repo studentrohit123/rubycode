@@ -49,3 +49,5 @@ for i in 0..5 do
       end 
 end
 
+str = "12"
+puts str.to_i

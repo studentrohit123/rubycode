@@ -49,3 +49,24 @@ end
 # end
 # x = multiple(2,3)
 # puts(x) // return values
+
+
+# i=1
+# until i==10
+#   puts i*10
+#   i = i + 1
+# end
+
+i=1
+while i<5
+   puts i
+   i = i + 1
+    redo if i==5
+end
+
+i=1
+while i<5
+  puts i
+  i = i + 1
+  retry
+end
