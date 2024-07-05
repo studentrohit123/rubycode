@@ -25,45 +25,44 @@ end
 Student.mark(20)
 =end
 
+# include
 module Gfg
   def portal
-    puts "this is portal"
+    puts "module 1 colled"
   end
+
   def tutorial
-      puts "this is tutorial"
-end
-def topic
-      puts "this is topic"
-end
+    puts "module 1 colled"
+  end
+
+  def topic
+    puts "module 1 collled"
+  end
 end
 
 module G
-  def secondmodule
-    puts "coll by 2 module"
-  end
-  def secondmo
-    puts "coll by 2 module"
-end
+    def portal
+      puts "coll by 2 module"
+    end
+
+    def tutorial
+      puts "coll by 2 module"
+    end
 end
 
 class Geeksforgeeks
-      include Gfg
-      include G
-      def add
-            z = 20 + 10
+    include Gfg
+    include G
+    def add
+      z = 20 + 10
       puts z
-      end
     end
+end
   obj = Geeksforgeeks.new
   obj.portal
-  obj.tutorial
-  obj.topic
-  obj.secondmodule
-  obj.secondmo
-  obj.add
 
 
-
+=begin
 # prepend
 module A
   def sum(x,y)
@@ -100,5 +99,5 @@ end
 obj = B.new
 obj.sum
 
-
+=end
 

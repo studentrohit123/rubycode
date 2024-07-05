@@ -2,6 +2,7 @@ module Greetable
       def morning_greeting
         puts "Good Morning"
       end
+      
       def evening_greeting
         puts "Good Evening"
       end
