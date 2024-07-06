@@ -60,13 +60,39 @@ x = 3
 while x >= 0    
       puts x   
       x -=1   
-    end   
+   end   
 
 i = 4
-    for i in 5...11   
-      if i == 7 then   
-         next   
-      end   
-      puts i   
-   end  
+  for i in 5...11   
+    if i == 7 then   
+        next   
+    end   
+    puts i   
+  end  
 
+[1,2,3,4,5,6].each {|num| print "#{num} "}
+
+class Abc 
+  attr_accessor :width,:height
+  def initialize(w,h)
+     @width = w
+     @height = h
+  end
+end
+obj = Abc.new(10,20)
+puts obj.width
+puts obj.height
+
+
+def proc_demo_method
+  proc_demo = Proc.new { return "Only I print!" }
+  proc_demo.call
+end
+
+puts proc_demo_method 
+
+proc_test = Proc.new { puts "this is proc" }
+proc_test.call
+
+proc_test = lambda { puts "this is lamda" }
+proc_test.call

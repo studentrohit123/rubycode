@@ -64,6 +64,9 @@ class Number < Student
     @enroll = enroll
   end
 end
+class Teacher < Student
+  attr_accessor :Teacher_name
+
 obj = Number.new("sunil","sunil123",32454,21)
 puts obj.name
 puts obj.id

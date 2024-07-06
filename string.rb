@@ -60,3 +60,14 @@ puts st
 
 arra = [1,2,3,4,5]
 puts arra.drop(3)
+
+puts "coll"
+def call_proc(my_proc)
+      count = 500
+      my_proc.call
+    end
+    
+    count   = 1
+    my_proc = Proc.new { puts count }
+    
+    p call_proc(my_proc) # What does this print?
