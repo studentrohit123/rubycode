@@ -41,25 +41,27 @@ module Gfg
 end
 
 module G
-    def portal
-      puts "coll by 2 module"
-    end
+  def portal
+    puts "coll by 2 module"
+  end
 
-    def tutorial
-      puts "coll by 2 module"
-    end
+  def tutorial
+    puts "coll by 2 module"
+  end
 end
 
 class Geeksforgeeks
-    include Gfg
-    include G
-    def add
-      z = 20 + 10
-      puts z
-    end
+  include Gfg
+  include G
+  
+  def add
+    z = 20 + 10
+    puts z
+  end
 end
-  obj = Geeksforgeeks.new
-  obj.portal
+
+obj = Geeksforgeeks.new
+obj.portal
 
 
 =begin

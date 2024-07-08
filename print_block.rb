@@ -17,7 +17,8 @@ def explisit_block(&block)
 end
 explisit_block{puts "B"}
 
-
+# interval range
 if ('A'..'Z' === 'D')
       puts "yes"
 end
+

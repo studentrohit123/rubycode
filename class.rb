@@ -84,15 +84,3 @@ puts obj.width
 puts obj.height
 
 
-def proc_demo_method
-  proc_demo = Proc.new { return "Only I print!" }
-  proc_demo.call
-end
-
-puts proc_demo_method 
-
-proc_test = Proc.new { puts "this is proc" }
-proc_test.call
-
-proc_test = lambda { puts "this is lamda" }
-proc_test.call

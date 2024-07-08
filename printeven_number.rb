@@ -10,4 +10,4 @@ class Even_number
     end
   obj = Even_number.new
   obj.even_method()
-    
+  

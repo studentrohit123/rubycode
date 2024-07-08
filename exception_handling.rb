@@ -25,13 +25,13 @@ begin
     puts "raise are print 2"
 end
 
-# def divide_numbers(x, y)
-#   raise ArgumentError, 'Cannot divide by zero' if y.zero?
+def divide_numbers(x, y)
+  raise ArgumentError, 'Cannot divide by zero' if y.zero?
 
-#   x / y
-# end
+   x / y
+end
 
-# puts divide_numbers(10, 0)
+puts divide_numbers(10, 0)
 
 begin
   

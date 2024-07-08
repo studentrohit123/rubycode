@@ -31,6 +31,7 @@ puts obj.getage
 
 # setter and getter method in student ditails
 
+=begin
 class Student_information
   def initialize(student_name,student_enroll,student_id)
     @student_name = student_name
@@ -75,10 +76,12 @@ puts obj.get_student_enroll
 obj.set_student_id="102"
 puts obj.get_student_id
 
+=end
 
+=begin
 class X
   attr_reader :name
-  attr_writer :age
+  attr_writer :name
   def initialize(name,age)
     @name = name
     @age = age
@@ -86,4 +89,19 @@ class X
 end
 obj = X.new("sunil",20)
 puts obj.name
-puts obj.age=(21)
+puts obj.name="vikash"
+
+=end
+
+class X
+  attr_accessor :name, :age
+  def initialize(name,age)
+    @name = name
+    @age = age
+  end
+end
+obj = X.new("sunil",20)
+puts obj.name
+puts obj.age
+puts obj.name="vikash"
+puts obj.age=21

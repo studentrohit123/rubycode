@@ -16,7 +16,7 @@ obj = Student_child_class.new # child class ka contracter our perent class ki me
 obj.student_name
 
 # inheritence concept apply
-=begin
+
 class Geeksforgeeks
   def gfg 
     puts "gfg1"
@@ -31,7 +31,6 @@ end
 obj = Geeks.new
 obj.gfg
 
-=end
 
 class Geeksforgeeks
   def gfg a = 0,b = 0
@@ -42,6 +41,8 @@ class Geeks < Geeksforgeeks
   def gfg
     super(2,3)
     super()
+    super(2)
+    super
     puts "gfg2"
   end
 end
@@ -62,25 +63,8 @@ end
 obj = Geeks1.new
 obj.public_method
 
-# execeptin handling 
 
 
 
-def raise_and_rescue      
-  begin
-         
-    puts 'This is Before Exception Arise!'
-         
-  raise 'Exception Created!'
-  
-    puts 'After Exception' 
 
-  rescue    
-    puts 'Finally Saved!'    
-    retry
-end    
-   
-puts 'Outside from Begin Block!'    
-end 
-raise_and_rescue
 

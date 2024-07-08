@@ -64,9 +64,3 @@ while i<5
     redo if i==5
 end
 
-i=1
-while i<5
-  puts i
-  i = i + 1
-  retry
-end

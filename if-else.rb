@@ -65,5 +65,10 @@ else
   puts "number is not prajent"
 end
 
-d
-end
+loop do   
+  puts "Checking for answer"   
+  answer = gets.chomp   
+  if answer != '5'   
+    break   
+  end   
+end  
